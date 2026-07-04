@@ -1,59 +1,51 @@
-\documentclass[10pt]{article}
-\usepackage[margin=0.62in]{geometry}
-\usepackage{enumitem}
-\usepackage{hyperref}
-\usepackage{titlesec}
-\pagenumbering{gobble}
-\setlist[itemize]{leftmargin=*,nosep}
-\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\documentclass[10pt,letterpaper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\usepackage[scale=0.84]{geometry}
+\nopagenumbers{}
+\setlength{\hintscolumnwidth}{2.2cm}
+
+\name{Srikrishnaa}{Vadivel}
+\title{Machine Learning Engineer | Scientific ML | Equivariant Models}
+\email{srikrishnaacareers@gmail.com}
+\phone[mobile]{516-853-5663}
+\social[github]{krishnaa423}
+\extrainfo{\href{https://leetcode.com/u/krishnaa42342}{leetcode.com/u/krishnaa42342} \textbar{} \href{https://hub.docker.com/u/krishnaa42342}{hub.docker.com/u/krishnaa42342}}
+
 \begin{document}
-\begin{center}
-{\LARGE Srikrishnaa Vadivel}\\
-Machine Learning Engineer \textbar{} Scientific ML \textbar{} Equivariant Models\\
-\href{mailto:srikrishnaacareers@gmail.com}{srikrishnaacareers@gmail.com} \textbar{} 516-853-5663\\
-\href{https://github.com/krishnaa423}{github.com/krishnaa423} \textbar{}
-\href{https://leetcode.com/u/krishnaa42342/}{leetcode.com/u/krishnaa42342} \textbar{}
-\href{https://hub.docker.com/u/krishnaa42342}{hub.docker.com/u/krishnaa42342}
-\end{center}
-\section{Summary}
-PhD researcher applying machine learning to first-principles materials and
-molecular systems. Experience spans PyTorch, equivariant graph networks,
-diffusion models, distributed training concepts, HPC data pipelines, and
-physics-based loss design.
+\makecvtitle
+
+\section{Profile}
+\cvitem{}{PhD researcher applying machine learning to first-principles materials and molecular systems. Experience spans PyTorch, equivariant graph networks, diffusion models, distributed training concepts, HPC data pipelines, and physics-based loss design.}
+
 \section{ML Experience}
-\textbf{Yale University, PhD Researcher} \hfill 2021--present
-\begin{itemize}
-\item Developed first-principles datasets and workflows for self-trapped
-exciton calculations on leadership-class HPC resources.
-\item Prototyped EGNN-style force models with energy gradients
-$F_{ai}=-\partial E/\partial R_{ai}$ and molecular graph construction.
-\item Built diffusion-model notes and code scaffolds covering DDPM training,
-conditional inference, transformers, and index-notation derivations.
-\end{itemize}
-\textbf{Probe Technologies / Weatherford} \hfill 2019--2021
-\begin{itemize}
-\item Built GPU-accelerated processing and visualization for large acoustic
-waveform data streams using CUDA and OpenGL.
-\item Engineered production data tooling around ASP services and Microsoft
-database systems.
-\end{itemize}
+\cventry{2021--present}{PhD Researcher}{Yale University}{}{}{\begin{itemize}%
+\item Developed first-principles datasets and workflows for self-trapped exciton calculations on leadership-class HPC resources.
+\item Prototyped EGNN-style force models with energy gradients $F_{ai}=-\partial E/\partial R_{ai}$ and molecular graph construction.
+\item Built diffusion-model notes and code scaffolds covering DDPM training, conditional inference, transformers, and index-notation derivations.
+\end{itemize}}
+\cventry{2019--2021}{Software and Embedded Engineer}{Probe Technologies / Weatherford}{}{}{\begin{itemize}%
+\item Built GPU-accelerated processing and visualization for large acoustic waveform data streams using CUDA and OpenGL.
+\item Engineered production data tooling around ASP services and Microsoft database systems.
+\end{itemize}}
+
 \section{Selected Projects}
-\begin{itemize}
-\item \textbf{EGNN QM9 Force Model}: PyTorch message-passing model, force loss,
-synthetic graph fallback, and training-curve generation.
-\item \textbf{Diffusion Notes}: DDPM equations with $\alpha_t$, $\beta_t$,
-conditional training, and inference in index notation.
-\item \textbf{LiF Band Scaffold}: reciprocal-space Hamiltonian assembly and
-eigenvalue plotting for physics-informed ML context.
-\end{itemize}
+\cvitem{EGNN QM9 Force Model}{PyTorch message-passing model, force loss, synthetic graph fallback, and training-curve generation.}
+\cvitem{Diffusion Notes}{DDPM equations with $\alpha_t$, $\beta_t$, conditional training, and inference in index notation.}
+\cvitem{LiF Band Scaffold}{Reciprocal-space Hamiltonian assembly and eigenvalue plotting for physics-informed ML context.}
+
 \section{Education}
-Yale University, PhD Electrical Engineering, 2021--present\\
-Yale University, MPhil Electrical Engineering, 2023\\
-Yale University, MS Electrical Engineering, 2023\\
-Cornell University, MEng ECE, 2017--2018\\
-Cornell University, BA ECE, 2013--2017
+\cventry{2021--present}{PhD, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2023}{MPhil, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2023}{MS, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2017--2018}{MEng, Electrical and Computer Engineering}{Cornell University}{}{}{}
+\cventry{2013--2017}{BA, Electrical and Computer Engineering}{Cornell University}{}{}{}
+
 \section{Skills}
-PyTorch, NumPy, SciPy, pandas, scikit-learn, Hugging Face Transformers,
-Accelerate, datasets, CUDA, MPI, OpenMP, Linux, Python, C++, Docker,
-Kubernetes, PETSc, SLEPc.
+\cvitem{ML}{PyTorch, scikit-learn, Hugging Face Transformers, Accelerate, datasets}
+\cvitem{Scientific}{NumPy, SciPy, pandas, PETSc, SLEPc}
+\cvitem{Systems}{Python, C++, Linux, Docker, Kubernetes, MPI, OpenMP}
+\cvitem{Compute}{CUDA}
+
 \end{document}

@@ -1,58 +1,55 @@
-\documentclass[10pt]{article}
-\usepackage[margin=0.62in]{geometry}
-\usepackage{enumitem}
-\usepackage{hyperref}
-\usepackage{titlesec}
-\pagenumbering{gobble}
-\setlist[itemize]{leftmargin=*,nosep}
-\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\documentclass[10pt,letterpaper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\usepackage[scale=0.84]{geometry}
+\nopagenumbers{}
+\setlength{\hintscolumnwidth}{2.2cm}
+
+\name{Srikrishnaa}{Vadivel}
+\title{Electrical Engineer | Photonics | Embedded Systems | Scientific Computing}
+\email{srikrishnaacareers@gmail.com}
+\phone[mobile]{516-853-5663}
+\social[github]{krishnaa423}
+\extrainfo{\href{https://leetcode.com/u/krishnaa42342}{leetcode.com/u/krishnaa42342} \textbar{} \href{https://hub.docker.com/u/krishnaa42342}{hub.docker.com/u/krishnaa42342}}
+
 \begin{document}
-\begin{center}
-{\LARGE Srikrishnaa Vadivel}\\
-Electrical Engineer \textbar{} Photonics \textbar{} Embedded Systems \textbar{} Scientific Computing\\
-\href{mailto:srikrishnaacareers@gmail.com}{srikrishnaacareers@gmail.com} \textbar{} 516-853-5663\\
-\href{https://github.com/krishnaa423}{github.com/krishnaa423} \textbar{}
-\href{https://leetcode.com/u/krishnaa42342/}{leetcode.com/u/krishnaa42342} \textbar{}
-\href{https://hub.docker.com/u/krishnaa42342}{hub.docker.com/u/krishnaa42342}
-\end{center}
-\section{Summary}
-Electrical engineer with Cornell ECE training, photonics communication,
-embedded systems delivery, FPGA/MCU experience, and current Yale PhD work in
-computational materials and high-performance scientific software.
+\makecvtitle
+
+\section{Profile}
+\cvitem{}{Electrical engineer with Cornell ECE training, photonics communication, embedded systems delivery, FPGA/MCU experience, and current Yale PhD work in computational materials and high-performance scientific software.}
+
 \section{Experience}
-\textbf{Yale University, PhD Researcher / Embedded Systems TA} \hfill 2021--present
-\begin{itemize}
-\item Research first-principles self-trapped excitons using HPC systems and
-scientific software stacks.
-\item Teach and support embedded systems concepts spanning firmware,
-instrumentation, and debugging.
-\end{itemize}
-\textbf{Probe Technologies / Weatherford, Software and Embedded Engineer} \hfill 2019--2021
-\begin{itemize}
-\item Developed embedded sensor logging firmware and Lattice FPGA logic for
-geological well tools.
+\cventry{2021--present}{PhD Researcher / Embedded Systems TA}{Yale University}{}{}{\begin{itemize}%
+\item Research first-principles self-trapped excitons using HPC systems and scientific software stacks.
+\item Teach and support embedded systems concepts spanning firmware, instrumentation, and debugging.
+\end{itemize}}
+\cventry{2019--2021}{Software and Embedded Engineer}{Probe Technologies / Weatherford}{}{}{\begin{itemize}%
+\item Developed embedded sensor logging firmware and Lattice FPGA logic for geological well tools.
 \item Built CUDA/OpenGL acoustic waveform processing and visualization tooling.
 \item Contributed ASP and Microsoft database software for field data workflows.
-\end{itemize}
-\textbf{FindLight, Photonics Blogger} \hfill 2018--2019
-\begin{itemize}
-\item Wrote clear technical content on photonics products, optics, and
-applications.
-\end{itemize}
+\end{itemize}}
+\cventry{2018--2019}{Photonics Blogger}{FindLight}{}{}{\begin{itemize}%
+\item Wrote clear technical content on photonics products, optics, and applications.
+\end{itemize}}
+
 \section{Projects}
-\begin{itemize}
-\item Verilog MIPS CPU and matrix-multiply accelerator with Icarus test benches.
-\item Meep ring resonator FDTD model for integrated photonics simulation.
-\item DOLFINx PDE notes and solver scaffold for finite-element methods.
-\item Robotic hand embedded project published in Circuit Cellar.
-\end{itemize}
+\cvitem{Digital Design}{Verilog MIPS CPU and matrix-multiply accelerator with Icarus test benches.}
+\cvitem{Photonics}{Meep ring resonator FDTD model for integrated photonics simulation.}
+\cvitem{Numerics}{DOLFINx PDE notes and solver scaffold for finite-element methods.}
+\cvitem{Robotics}{Embedded robotic hand project published in Circuit Cellar.}
+
 \section{Education}
-Yale University, PhD Electrical Engineering, 2021--present\\
-Yale University, MPhil Electrical Engineering, 2023\\
-Yale University, MS Electrical Engineering, 2023\\
-Cornell University, MEng Electrical and Computer Engineering, 2017--2018\\
-Cornell University, BA Electrical and Computer Engineering, 2013--2017
+\cventry{2021--present}{PhD, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2023}{MPhil, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2023}{MS, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2017--2018}{MEng, Electrical and Computer Engineering}{Cornell University}{}{}{}
+\cventry{2013--2017}{BA, Electrical and Computer Engineering}{Cornell University}{}{}{}
+
 \section{Skills}
-Circuits, embedded C, Verilog, FPGA, MCUs, photonics, signal processing,
-OpenGL, CUDA, Python, C++, Linux, HPC, numerical methods.
+\cvitem{Core}{Circuits, embedded C, Verilog, FPGA, MCUs, signal processing}
+\cvitem{Photonics}{Photonics, optics communication}
+\cvitem{Software}{Python, C++, Linux, OpenGL, CUDA}
+\cvitem{Scientific}{HPC, numerical methods}
+
 \end{document}

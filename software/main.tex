@@ -1,73 +1,56 @@
-\documentclass[10pt]{article}
-\usepackage[margin=0.62in]{geometry}
-\usepackage{enumitem}
-\usepackage{hyperref}
-\usepackage{titlesec}
-\pagenumbering{gobble}
-\setlist[itemize]{leftmargin=*,nosep}
-\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
-\begin{document}
-\begin{center}
-{\LARGE Srikrishnaa Vadivel}\\
-Software Engineer \textbar{} Scientific Computing \textbar{} Distributed Systems\\
-\href{mailto:srikrishnaacareers@gmail.com}{srikrishnaacareers@gmail.com} \textbar{} 516-853-5663\\
-\href{https://github.com/krishnaa423}{github.com/krishnaa423} \textbar{}
-\href{https://leetcode.com/u/krishnaa42342/}{leetcode.com/u/krishnaa42342} \textbar{}
-\href{https://hub.docker.com/u/krishnaa42342}{hub.docker.com/u/krishnaa42342}
-\end{center}
+\documentclass[10pt,letterpaper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
 
-\section{Summary}
-Software engineer and Yale PhD researcher building scientific computing,
-high-performance simulation, data visualization, and ML infrastructure. Strong
-background in Python, C/C++, Linux, CUDA/OpenGL, MPI/OpenMP, Docker, Kubernetes,
-and production engineering for embedded and server-side systems.
+\usepackage[scale=0.84]{geometry}
+\nopagenumbers{}
+\setlength{\hintscolumnwidth}{2.2cm}
+
+\name{Srikrishnaa}{Vadivel}
+\title{Software Engineer | Scientific Computing | Distributed Systems}
+\email{srikrishnaacareers@gmail.com}
+\phone[mobile]{516-853-5663}
+\social[github]{krishnaa423}
+\extrainfo{\href{https://leetcode.com/u/krishnaa42342}{leetcode.com/u/krishnaa42342} \textbar{} \href{https://hub.docker.com/u/krishnaa42342}{hub.docker.com/u/krishnaa42342}}
+
+\begin{document}
+\makecvtitle
+
+\section{Profile}
+\cvitem{}{Software engineer and Yale PhD researcher building scientific computing, high-performance simulation, data visualization, and ML infrastructure. Strong background in Python, C/C++, Linux, CUDA/OpenGL, MPI/OpenMP, Docker, Kubernetes, and production engineering for embedded and server-side systems.}
 
 \section{Experience}
-\textbf{Yale University, PhD Researcher} \hfill 2021--present\\
-\begin{itemize}
-\item Built first-principles workflows for self-trapped excitons using HPC
-resources at Oak Ridge, Aurora, LBNL, and LLNL.
-\item Developed Python/C++ automation around PETSc/SLEPc, MPI, OpenMP, CMake,
-Linux shell tooling, containers, and parallel job execution.
-\item Prototyped ML models for molecular and materials data, including EGNN
-force models and diffusion-style generative workflows.
-\end{itemize}
-\textbf{Probe Technologies / Weatherford, Software and Embedded Engineer} \hfill 2019--2021\\
-\begin{itemize}
+\cventry{2021--present}{PhD Researcher}{Yale University}{}{}{\begin{itemize}%
+\item Built first-principles workflows for self-trapped excitons using HPC resources at Oak Ridge, Aurora, LBNL, and LLNL.
+\item Developed Python/C++ automation around PETSc/SLEPc, MPI, OpenMP, CMake, Linux shell tooling, containers, and parallel job execution.
+\item Prototyped ML models for molecular and materials data, including EGNN force models and diffusion-style generative workflows.
+\end{itemize}}
+\cventry{2019--2021}{Software and Embedded Engineer}{Probe Technologies / Weatherford}{}{}{\begin{itemize}%
 \item Wrote ASP server and Microsoft database tooling for field data systems.
-\item Built CUDA/OpenGL acoustic logging visualization software for processing
-and displaying large waveform data sets.
-\item Delivered embedded firmware for C8051-class MCUs and Lattice FPGA sensor
-logging used in geological well tools; validated with oscilloscopes and field
-tests.
-\end{itemize}
-\textbf{FindLight, Photonics Blogger} \hfill 2018--2019\\
-\begin{itemize}
-\item Wrote technical photonics articles translating optics products and
-applications into clear engineering content.
-\end{itemize}
+\item Built CUDA/OpenGL acoustic logging visualization software for processing and displaying large waveform data sets.
+\item Delivered embedded firmware for C8051-class MCUs and Lattice FPGA sensor logging used in geological well tools; validated with oscilloscopes and field tests.
+\end{itemize}}
+\cventry{2018--2019}{Photonics Blogger}{FindLight}{}{}{\begin{itemize}%
+\item Wrote technical photonics articles translating optics products and applications into clear engineering content.
+\end{itemize}}
 
 \section{Projects}
-\begin{itemize}
-\item \textbf{DOLFINx PDE Gallery}: weak-form derivations, Poisson solver,
-PyVista visualization, and docs in index notation.
-\item \textbf{Meep Ring Resonator}: FDTD photonics simulation of a ring coupled
-to a waveguide with field animation workflow.
-\item \textbf{First-Principles LiF}: plane-wave Hamiltonian scaffold and band
-plotting for DFT-style workflows.
-\item \textbf{ROS 2 TurtleBot Simulation}: Docker-oriented Nav2/Gazebo plan
-with trajectory analysis fallback.
-\end{itemize}
+\cvitem{DOLFINx PDE Gallery}{Weak-form derivations, Poisson solver, PyVista visualization, and documentation in index notation.}
+\cvitem{Meep Ring Resonator}{FDTD photonics simulation of a ring coupled to a waveguide with field animation workflow.}
+\cvitem{First-Principles LiF}{Plane-wave Hamiltonian scaffold and band plotting for DFT-style workflows.}
+\cvitem{ROS 2 TurtleBot Simulation}{Docker-oriented Nav2/Gazebo plan with trajectory analysis fallback.}
 
 \section{Education}
-\textbf{Yale University}, PhD, Electrical Engineering \hfill 2021--present\\
-\textbf{Yale University}, MPhil, Electrical Engineering \hfill 2023\\
-\textbf{Yale University}, MS, Electrical Engineering \hfill 2023\\
-\textbf{Cornell University}, MEng, Electrical and Computer Engineering \hfill 2017--2018\\
-\textbf{Cornell University}, BA, Electrical and Computer Engineering \hfill 2013--2017
+\cventry{2021--present}{PhD, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2023}{MPhil, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2023}{MS, Electrical Engineering}{Yale University}{}{}{}
+\cventry{2017--2018}{MEng, Electrical and Computer Engineering}{Cornell University}{}{}{}
+\cventry{2013--2017}{BA, Electrical and Computer Engineering}{Cornell University}{}{}{}
 
 \section{Skills}
-Python, C, C++, CUDA, OpenGL, Bash, Linux, CMake, PETSc, SLEPc, MPI, OpenMP,
-Docker, Kubernetes, SQL Server, ASP, PyTorch, NumPy, SciPy, pandas, scikit-learn,
-Hugging Face, Terraform, AWS, GCP.
+\cvitem{Languages}{Python, C, C++, Bash, SQL}
+\cvitem{Systems}{Linux, CMake, Docker, Kubernetes, MPI, OpenMP}
+\cvitem{Scientific / ML}{PETSc, SLEPc, PyTorch, NumPy, SciPy, pandas, scikit-learn, Hugging Face}
+\cvitem{Platforms}{CUDA, OpenGL, AWS, GCP, Terraform}
+
 \end{document}
